@@ -36,7 +36,7 @@ jobs:
       - name: Setup KernelSU (Legacy)
         run: |
          #curl -LSs "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/next/kernel/setup.sh" | bash -s legacy
-         curl -LSs "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/refs/tags/3.0.0/kernel/setup.sh" | bash -s legacy
+         curl -LSs "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/refs/tags/v3.0.0/kernel/setup.sh" | bash -s legacy
 
       - name: Start Build (with log)
         run: |
