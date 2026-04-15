@@ -121,6 +121,7 @@ build_kernel() {
         CROSS_COMPILE_ARM32=$TC32 \
         CROSS_COMPILE_COMPAT=$TC32 || {
         send_telegram_error
+        send_telegram_log
         exit 1
     }
 
@@ -149,6 +150,7 @@ pack_kernel() {
         IMG_USED="Image.gz"
     else
         send_telegram_error
+        send_telegram_log
         exit 1
     fi
 
