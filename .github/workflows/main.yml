@@ -39,6 +39,10 @@ jobs:
          sed -i 's|#include <uapi/linux/sched/types.h>|#include <linux/sched.h>|g' drivers/kernelsu/selinux/rules.c
          
       - name: Start Build (with log)
+        env:
+          # Ubah nilai di bawah ini sesuai keinginan
+          KBUILD_BUILD_USER: "RahmatSobrian"
+          KBUILD_BUILD_HOST: "ReLIFE"
         run: |
           mkdir -p logs
           #bash build.sh 2>&1 | tee logs/build.log
